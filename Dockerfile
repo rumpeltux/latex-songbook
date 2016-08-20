@@ -18,5 +18,8 @@ RUN mkdir -p /usr/share/fonts/truetype/music && \
          -O /usr/share/fonts/truetype/music/MuseJazz.ttf && \
     fc-cache -f -v
 
+# Install git & pyparsing
+RUN apt-get install -qy git python-pyparsing
+
 WORKDIR /data
 VOLUME ["/data"]
