@@ -18,8 +18,8 @@ RUN mkdir -p /usr/share/fonts/truetype/music && \
          -O /usr/share/fonts/truetype/music/MuseJazz.ttf && \
     fc-cache -f -v
 
-# Install git & pyparsing
-RUN apt-get install -qy git python-pyparsing
+# Install more packages that are needed now that the songbook evolved.
+RUN apt-get install -qy --no-install-recommends git python-pyparsing lilypond
 
 WORKDIR /data
 VOLUME ["/data"]
