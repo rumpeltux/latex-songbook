@@ -1,4 +1,4 @@
-FROM ubuntu:wily
+FROM ubuntu:xenial
 MAINTAINER Hagen Fritsch <rumpeltux-songbookdocker@irgendwo.org>
 ENV DEBIAN_FRONTEND noninteractive
 
