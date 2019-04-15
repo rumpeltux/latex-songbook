@@ -26,5 +26,12 @@ RUN cd /tmp; \
     dpkg -i *.deb && \
     rm *.deb
 
+# Install pdfsizeopt
+RUN mkdir -p /usr/local/pdfsizeopt; \
+    cd /usr/local/pdfsizeopt; \
+    wget -q -O - https://github.com/pts/pdfsizeopt/releases/download/2017-01-24/pdfsizeopt_libexec_linux-v3.tar.gz | tar xzo; \
+    wget -q -O pdfsizeopt https://raw.githubusercontent.com/pts/pdfsizeopt/master/pdfsizeopt.single; \
+    chmod -R 755 .
+
 WORKDIR /data
 VOLUME ["/data"]
