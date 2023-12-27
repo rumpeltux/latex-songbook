@@ -7,6 +7,7 @@ RUN apt-get update -q && \
         ca-certificates \
         curl \
         fonts-freefont-otf \
+        git \
         latexmk \
         lilypond \
         make \
