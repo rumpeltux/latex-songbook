@@ -27,7 +27,7 @@ RUN mkdir -p /usr/local/pdfsizeopt; \
 # Install MuseJazz font
 RUN curl -L https://github.com/musescore/MuseScore/raw/master/fonts/musejazz/MuseJazzText.otf \
         > /usr/share/fonts/opentype/MuseJazzText.otf && \
-    fc-cache -f -v
+    fc-cache -f -v || true
 
 WORKDIR /data
 VOLUME ["/data"]
