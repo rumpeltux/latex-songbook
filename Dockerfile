@@ -12,6 +12,7 @@ RUN apt-get update -q && \
         lilypond \
         make \
         python3-pyparsing \
+        python3-ebooklib \
         texlive-base \
         texlive-fonts-recommended \
         texlive-music \
